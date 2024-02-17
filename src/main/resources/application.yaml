@@ -1,0 +1,27 @@
+
+POSTGRES_SCHEMA: hexagon
+POSTGRES_HOST: localhost
+POSTGRES_PORT: 5432
+POSTGRES_DB: hexagon
+POSTGRES_USER: hexagon
+POSTGRES_PASSWORD: hexagon
+
+spring:
+  jpa:
+    database: POSTGRESQL
+    show-sql: false
+    hibernate:
+      ddlAuto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        default_schema: hexagon
+    open-in-view: false
+  datasource:
+    url: jdbc:postgresql://${POSTGRES_HOST:localhost}:${POSTGRES_PORT:5432}/${POSTGRES_DB:hexagon}?currentSchema=${POSTGRES_SCHEMA:hexagon}&stringtype=unspecified
+    username: ${POSTGRES_USER:hexagon}
+    password: ${POSTGRES_PASSWORD:hexagon}
+    driver-class-name: org.postgresql.Driver
+logging:
+  level:
+    com.youtube: debug
