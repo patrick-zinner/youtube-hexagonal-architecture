@@ -1,4 +1,4 @@
-package com.youtube.patrickzinner.controller;
+package com.youtube.patrickzinner.adapter.controller;
 
 import com.youtube.patrickzinner.core.model.Task;
 import com.youtube.patrickzinner.core.port.TaskService;
