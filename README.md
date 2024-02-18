@@ -1,6 +1,6 @@
 # Hexagonal Architecture in Spring Boot and Java
 
-This repo shows a simple setup for an Hexagonal Architecture using Spring Boot and Java as shown in my YoutubeVideo.
+This repo shows a simple setup for an Hexagonal Architecture using Spring Boot and Java as shown in my [Youtube video](https://youtu.be/J0etq6clvfw).
 
 ![Hexagon](./hexagon.png)
 
